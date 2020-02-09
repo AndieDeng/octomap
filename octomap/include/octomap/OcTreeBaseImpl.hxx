@@ -551,8 +551,7 @@ namespace octomap {
     OcTreeKey key_origin, key_end;
     if ( !OcTreeBaseImpl<NODE,I>::coordToKeyChecked(origin, key_origin) ||
          !OcTreeBaseImpl<NODE,I>::coordToKeyChecked(end, key_end) ) {
-      OCTOMAP_WARNING_STR("coordinates ( "
-                << origin << " -> " << end << ") out of bounds in computeRayKeys");
+
       return false;
     }
 
